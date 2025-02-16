@@ -1,0 +1,338 @@
+/* Application-wide styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  border-bottom: 2px solid #ffcc00;
+  color: #fff;
+}
+
+.navbar a.nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-brand {
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Add hover effects to navbar links */
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.jumbotron p {
+  font-size: 1.25em;
+  font-family: "Copse", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Button Styling */
+.btn-light {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-light:hover {
+  background-color: #e6b800;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #caa200;
+}
+
+/* Improve button styles */
+.btn {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+input.form-control, textarea.form-control {
+  border-radius: 0;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Improve form styles */
+.form-control {
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+}
+
+/* Real-time Validation Feedback */
+.is-valid {
+  border-color: #28a745;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Section Headings */
+h2, h3 {
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 0;
+  background-color: #e9ecef;
+}
+
+.about-section p {
+  font-size: 1.25em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section .btn-primary {
+  font-size: 1.2em;
+  padding: 10px 25px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.contact-form .btn-primary {
+  padding: 12px 20px;
+  width: 100%;
+}
+
+/* Estimate Section */
+.estimate-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estimate-form label {
+  font-weight: bold;
+}
+
+.estimate-form input, .estimate-form textarea {
+  border-radius: 5px;
+}
+
+.estimate-form button[type="submit"] {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.estimate-form button[type="submit"]:hover {
+  background-color: #e6b800;
+}
+
+/* Testimonial Styles */
+.testimonial-box {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-author {
+  font-size: 1em;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .estimate-form {
+    padding: 20px;
+  }
+
+  .estimate-form label {
+    font-size: 0.9em;
+  }
+
+  .estimate-form input, .estimate-form textarea {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .btn-primary {
+    font-size: 0.9em;
+  }
+}
+
+/* Galaxy Z Fold specific styles */
+@media (max-width: 720px) and (min-height: 1280px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .navbar a {
+    padding: 8px;
+  }
+
+  .estimate-form {
+    padding: 15px;
+  }
+
+  .estimate-form label {
+    font-size: 0.8em;
+  }
+
+  .estimate-form input, .estimate-form textarea {
+    font-size: 0.8em;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
+
+  .btn-primary {
+    font-size: 0.8em;
+  }
+}
+

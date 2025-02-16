@@ -1,0 +1,25 @@
+<div class="container mt-5 mb-5" style="margin-left: 5%; margin-right: 5%;">
+  <h1 class="text-center mb-2">Get a Free Estimate</h1>
+  <p class="text-center mb-3">Fill out the form below to receive your free roofing estimate:</p>
+  <%= form_with url: estimate_path, method: :post, local: true, id: "estimate-form" do %>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter your name", required: true %>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter your email", required: true %>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Your details here</label>
+      <%= text_area_tag :message, nil, class: "form-control", rows: 3, placeholder: "Your message", required: true %>
+    </div>
+    <div class="mb-3">
+      <label for="appointment" class="form-label">Schedule an Appointment</label>
+      <%= datetime_local_field_tag :appointment, nil, class: "form-control", required: true %>
+    </div>
+    <div class="text-center">
+      <%= submit_tag "Submit", class: "btn btn-primary mt-2" %>
+    </div>
+  <% end %>
+</div>
