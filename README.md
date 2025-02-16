@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is just a quick review of how the I and E roofing applicatoin works and what coding languages were used in the process
 
-Things you may want to cover:
+quick exlpanation:
 
-* Ruby version
+* Ruby version 3.3.6
 
-* System dependencies
+* 
 
-* Configuration
+* 
 
-* Database creation
+* 
 
-* Database initialization
+* 
 
-* How to run the test suite
+* 
 
-* Services (job queues, cache servers, search engines, etc.)
+* 
 
-* Deployment instructions
+* 
 
-* ...
+*
