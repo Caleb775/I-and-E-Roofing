@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def landing
+    render plain: "Landing Page"
   end
 
   def estimate
